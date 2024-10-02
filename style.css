@@ -8,7 +8,7 @@
   font-family: "Nunito", sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding-top: 25px;
+  scroll-padding-top: 125px;
 
 }
 
@@ -51,16 +51,32 @@ ul {
 /* End Global Rules */
 
 /* Start Landing Page */
+
+
+
+
+.landing-page {
+  position: relative;
+}
+
 .landing-page header {
   min-height: 80px;
   display: flex;
   background-color: #e0f3ffad;
-  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
+
 @media (max-width: 767px) {
   .landing-page header {
     min-height: auto;
     display: initial;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
   }
 }
 .landing-page header .container{
@@ -119,6 +135,9 @@ ul {
 }
 .landing-page {
   background: linear-gradient(white,#d9f0ffad );
+}
+.landing-page .content {
+  padding-top: 80px; /* tinggi navbar */
 }
 .landing-page .content .container {
   display: flex;
@@ -223,7 +242,7 @@ ul {
 @media (max-width: 930px) {
   .galery {
     grid-template-columns: repeat(1, 1fr);
-    padding: 60px 80px;
+    padding: 10px 10px;
     gap: 30px;
   }
 }
@@ -256,7 +275,7 @@ ul {
   display: flex;
   align-items: flex-end;
   width: min(150%, 330px);
-  height: 350px;
+  height: 450px;
   padding: 30px;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
   border-radius: 25px;
@@ -304,7 +323,7 @@ ul {
   transform: translateY(0);
 }
 .card-info h1 {
-  font-size: clamp(1.2rem, 1vw, 2rem);
+  font-size: clamp(1.2rem, 0.5vw, 10rem);
 }
 .card-info p {
   font-size: clamp(0.8rem, 2vw, 0.5rem);

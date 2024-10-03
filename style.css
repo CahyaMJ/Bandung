@@ -24,8 +24,10 @@ ul {
   margin: 0;
 }
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  overflow-x: hidden;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
   padding: auto;
   margin: auto;
 }
@@ -33,6 +35,7 @@ ul {
 @media (min-width: 768px) {
   .container {
     width: 750px;
+    overflow-x: hidden;
   }
 }
 
@@ -40,20 +43,19 @@ ul {
 @media (min-width: 992px) {
   .container {
     width: 970px;
+    overflow-x: hidden;
   }
 }
 /* Large */
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+    overflow-x: hidden;
   }
 }
 /* End Global Rules */
 
 /* Start Landing Page */
-
-
-
 
 .landing-page {
   position: relative;
@@ -177,9 +179,9 @@ ul {
 
 .landing-page .content .image img{ 
   position: relative;
-  width: 250%;
-  top: -5%;
-  right: 100px;
+  width: 180%;
+  top: 30%;
+  right: 125px;
 }
 @media (max-width: 767px) {
    .landing-page .content .image{ 
@@ -390,6 +392,7 @@ ul {
 }
 
 .container-1 {
+    overflow-x: hidden;
     max-width: 10000px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -430,10 +433,11 @@ ul {
 
 @media (max-width: 768px) {
     .container-1 {
-      grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     padding: 0px 0px;
     gap: 30px;
     max-width: 1000px;
+    overflow-x: hidden;
     }
     .place {
         flex-direction: column;
@@ -633,6 +637,7 @@ ul {
 .container-3 {
     margin-top: 50px;
     max-width: 1200px;
+    overflow-x: hidden;
 }
 
 .section {
@@ -770,6 +775,7 @@ ul {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  overflow-x: hidden;
 }
 
 .row {
